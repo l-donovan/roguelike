@@ -32,6 +32,7 @@ class spritesheet(object):
                 for x in range(image_count)]
         return self.imagesAt(tups, xScl, yScl, colorkey)
         
+    # Loads all the sprites in a spritesheet into a two-dimensional array
     def loadSprites(self, xDim, yDim, xNum, yNum, xScl=1, yScl=1, colorkey=None):
         output = []
         for i in range(0, yNum):
